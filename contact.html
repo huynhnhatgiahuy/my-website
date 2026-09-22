@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Liên hệ - Huỳnh Nhật Gia Huy | Gửi Mail & Tin Nhắn</title>
+    <meta name="description" content="Gửi tin nhắn liên hệ trực tiếp với Huỳnh Nhật Gia Huy qua form trực tuyến. Dễ dàng trao đổi về học tập, dự án lập trình và hợp tác công việc.">
+    
+    <meta property="og:title" content="Liên hệ - Huỳnh Nhật Gia Huy | Gửi Mail & Tin Nhắn">
+    <meta property="og:description" content="Gửi tin nhắn liên hệ trực tiếp với Huỳnh Nhật Gia Huy qua form trực tuyến. Dễ dàng trao đổi về học tập, dự án lập trình và hợp tác công việc.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>HUỲNH NHẬT GIA HUY</h1>
+        <p>Sinh viên ngành Công nghệ thông tin - Yêu thích lập trình và phát triển Web.</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="https://github.com/huystarsboy" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <section>
+                <h2>Liên hệ với tôi</h2>
+                
+                <form action="#" method="POST">
+                    
+                    <!-- FIELDSET 1: Thông tin cá nhân -->
+                    <fieldset>
+                        <legend>Thông tin cá nhân</legend>
+
+                        <div class="form-group">
+                            <label for="fullname">Họ và tên:</label>
+                            <input type="text" id="fullname" name="fullname" required minlength="2" placeholder="Nhập họ và tên...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="nhapemail@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại:</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" placeholder="0915098506 (10-11 số)">
+                        </div>
+
+                        <!-- 23. (Nâng cao) Ngày sinh -->
+                        <div class="form-group">
+                            <label for="dob">Ngày sinh:</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+
+                        <!-- 24. (Nâng cao) Trường học có Datalist gợi ý -->
+                        <div class="form-group">
+                            <label for="university">Trường Đại học:</label>
+                            <input list="university-list" id="university" name="university" placeholder="Gõ hoặc chọn trường...">
+                            <datalist id="university-list">
+                                <option value="Trường Đại học Gia Định">
+                                <option value="Trường Đại học Bách Khoa">
+                                <option value="Trường Đại học Khoa học Tự nhiên">
+                                <option value="Trường Đại học Công nghệ Thông tin">
+                            </datalist>
+                        </div>
+                    </fieldset>
+
+                    <!-- FIELDSET 2: Nội dung liên hệ -->
+                    <fieldset>
+                        <legend>Nội dung liên hệ</legend>
+
+                        <div class="form-group">
+                            <label for="topic">Chủ đề:</label>
+                            <select id="topic" name="topic">
+                                <option value="hotro">Hỗ trợ</option>
+                                <option value="hoctap">Học tập</option>
+                                <option value="khac">Khác</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ưu tiên liên hệ qua:</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="contact_channel" value="email" checked> Email</label>
+                                <label><input type="radio" name="contact_channel" value="phone"> Điện thoại</label>
+                                <label><input type="radio" name="contact_channel" value="zalo"> Zalo</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nội dung tin nhắn:</label>
+                            <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Nhập nội dung ít nhất 10 ký tự..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree">Tôi đồng ý với các điều khoản liên hệ</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Nút hành động -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-submit">Gửi tin nhắn</button>
+                        <button type="reset" class="btn btn-reset">Xoá và nhập lại</button>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            Liên hệ email: <a href="mailto:giahuy.toky.91@gmail.com">giahuy.toky.91@gmail.com</a> | 
+            Điện thoại: <a href="tel:0915098506">0915098506</a>
+        </address>
+        <p>&copy; 2026 Huỳnh Nhật Gia Huy. Tất cả quyền được bảo lưu.</p>
+        <p>Cập nhật lần cuối: <time datetime="2026-09-22">22/09/2026</time></p>
+    </footer>
+
+</body>
+</html>

@@ -1,30 +1,82 @@
-<!DOCTYE html>
+<!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
-        <title>HUỲNH NHẬT GIA HUY</title>
-         <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <h1>HUỲNH NHẬT GIA HUY</h1>
-        <h2>Thông tin cá nhân</h2>
-        <p>Họ và tên: <strong>HUỲNH NHẬT GIA HUY</strong></p>
-        <p>Quê quán: Tây Ninh</p>
-        <p>Ngành học: Công nghệ thông tin</p>
-        <p>Năm học: Năm 3</p>
-        <h2>Sở thích</h2>
-        <ul>
-            <li>Chơi thể thao</li>
-            <li>Chơi game</li>
-            <li>Nghe nhạc</li>
-        </ul>
-        <h2>Mục tiêu học kỳ này</h2>
-        <ol>
-            <li>Hoàn thành tốt các môn đã đăng kí</li>
-            <li>Cố gắng đạt được điểm số cao</li>
-            <li>Hoàn thành các bài tiểu luận nhóm thật tốt</li>
-        </ol>
-    </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 25. Title (50-60 ký tự, chứa tên) -->
+    <title>Trang chủ - Huỳnh Nhật Gia Huy | Website Cá Nhân CNTT</title>
+    
+    <!-- 26. Meta description (150-160 ký tự, bắt đầu bằng hành động) -->
+    <meta name="description" content="Khám phá website cá nhân của Huỳnh Nhật Gia Huy, sinh viên Công nghệ thông tin. Xem thông tin cá nhân, định hướng nghề nghiệp và các mục tiêu học tập.">
+    
+    <!-- 34. Open Graph Meta Tags (Nâng cao) -->
+    <meta property="og:title" content="Trang chủ - Huỳnh Nhật Gia Huy | Website Cá Nhân CNTT">
+    <meta property="og:description" content="Khám phá website cá nhân của Huỳnh Nhật Gia Huy, sinh viên Công nghệ thông tin. Xem thông tin cá nhân, định hướng nghề nghiệp và các mục tiêu học tập.">
+    <meta property="og:type" content="website">
 
+    <!-- Google Font 'Inter' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>HUỲNH NHẬT GIA HUY</h1>
+        <p>Sinh viên ngành Công nghệ thông tin - Yêu thích lập trình và phát triển Web.</p>
+
+        <!-- Đưa nav vào header để khớp với selector CSS "header nav a" -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="https://github.com/huystarsboy" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 6. Bọc toàn bộ nội dung chính vào trong <div class="card"> -->
+        <div class="card">
+            <section>
+                <h2>Thông tin cá nhân</h2>
+                <p>Họ và tên: <strong>HUỲNH NHẬT GIA HUY</strong></p>
+                <p>Quê quán: Tây Ninh</p>
+                <p>Ngành học: Công nghệ thông tin</p>
+                <p>Năm học: Năm 3</p>
+
+                <h3>Sở thích</h3>
+                <ul>
+                    <li>Chơi thể thao</li>
+                    <li>Chơi game</li>
+                    <li>Nghe nhạc</li>
+                </ul>
+            </section>
+
+            <section style="margin-top: 20px;">
+                <h2>Mục tiêu học kỳ này</h2>
+                <ol>
+                    <li>Hoàn thành tốt các môn đã đăng ký</li>
+                    <li>Cố gắng đạt được điểm số cao</li>
+                    <li>Hoàn thành các bài tiểu luận nhóm thật tốt</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            Liên hệ email: <a href="mailto:giahuy.toky.91@gmail.com">giahuy.toky.91@gmail.com</a> | 
+            Điện thoại: <a href="tel:0915098506">0915098506</a>
+        </address>
+        <p>&copy; 2026 Huỳnh Nhật Gia Huy. Tất cả quyền được bảo lưu.</p>
+        <p>Cập nhật lần cuối: <time datetime="2026-09-22">22/09/2026</time></p>
+    </footer>
+
+</body>
+</html>
